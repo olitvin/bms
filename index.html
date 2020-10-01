@@ -47,17 +47,32 @@
       /* max-height: 300px; */
       margin: 0;
       box-sizing: border-box;
+      flex: 1;
+      animation: none;
     }
 
+    .tile .video-js .vjs-tech {
+      width: 100%;
+      height: 100%;
+      flex: 1;
+      display: flex;
+      transition: none;
+      animation: none;
+    }
+
+    .tile .video-js .vjs-tech > * {
+      flex: 1;
+    }
+    
     .vjs-playlist-player {
       position: relative;
-      overflow: visible
+      overflow: visible;
     }
 
     .vjs-playlist-player-container .vjs-playlist {
       position: relative;
       margin: 0;
-      overflow: visible
+      overflow: visible;
     }
   </style>
   <link href="https://vjs.zencdn.net/7.8.3/video-js.min.css" rel="stylesheet">
